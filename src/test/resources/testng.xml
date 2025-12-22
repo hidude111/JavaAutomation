@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Tests" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+    <test name="Backend Tests">
+        <classes>
+            <class name="APITests" />
+        </classes>
+    </test>
+    <test name = "UI Tests">
+        <classes>
+            <class name = "UITests"/>
+        </classes>
+    </test>
+</suite>
