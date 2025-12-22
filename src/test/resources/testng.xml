@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Tests" parallel="methods" thread-count="1">
+<suite name="Tests" thread-count="2">
     <listeners>
         <listener class-name="listeners.TestListener"/>
     </listeners>
-    <test name="Backend Tests">
+    <test name="Backend Tests" parallel = "false">
         <classes>
             <class name="APITests" />
         </classes>
     </test>
-    <test name = "UI Tests">
+    <test name = "UI Tests" parallel="false">
         <classes>
             <class name = "UITests"/>
         </classes>
     </test>
+    <test name = "parallel tests" parallel="true">
+        <classes>
+            <class name = "ParallelTestExecution"/>
+        </classes>
+    </test>
 </suite>
+
