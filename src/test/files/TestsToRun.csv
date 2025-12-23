@@ -1,0 +1,6 @@
+TestCaseID,Execute,Username,Password,ExpectedStatus
+TC_001,Y,User1,Pass1,Success
+TC_002,N,User2,Pass2,Failure
+TC_003,Y,User3,Pass3,Success
+TC_004,Y,User4,Pass4,Success
+TC_005,N,User5,Pass5,Failure

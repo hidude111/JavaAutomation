@@ -1,12 +1,11 @@
+package Tests;
+
 import BaseClasses.UIBaseTest;
 import models.AdminPageModel;
 import models.ParaBankLandingPageModel;
 import models.RegisterPageModel;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

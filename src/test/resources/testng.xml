@@ -3,19 +3,19 @@
     <listeners>
         <listener class-name="listeners.TestListener"/>
     </listeners>
-    <test name="Backend Tests" parallel = "false">
+    <test name="Backend Tests" parallel="false">
         <classes>
-            <class name="APITests" />
+            <class name="Tests.APITests" />
         </classes>
     </test>
     <test name = "UI Tests" parallel="false">
         <classes>
-            <class name = "UITests"/>
+            <class name = "Tests.UITests"/>
         </classes>
     </test>
     <test name = "parallel tests" parallel="true">
         <classes>
-            <class name = "ParallelTestExecution"/>
+            <class name = "Tests.ParallelTestExecution"/>
         </classes>
     </test>
 </suite>

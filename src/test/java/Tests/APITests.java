@@ -1,11 +1,11 @@
+package Tests;
+
 import BaseClasses.APIBaseTest;
 import io.restassured.response.Response;
 import models.Synonyms;
 import org.hamcrest.core.Is;
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;

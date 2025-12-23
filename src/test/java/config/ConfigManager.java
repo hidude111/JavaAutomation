@@ -39,4 +39,13 @@ public class ConfigManager {
     //API Headers
     public static String apiKey() { return getProperty("x-rapidapi-key");}
 
+    //FIle Reader
+    public static String getTestCSVFIle() {return getProperty("testCSVFile");}
+
+    //DB info
+    public static String getDBHost() {return getProperty("db.host");}
+    public static String getDBUser() {return getProperty("db.user");}
+    public static String getDBPW() {return getProperty("db.pw");}
+    public static String getJDBC() {return getProperty("db.jdbc");}
+
 }
