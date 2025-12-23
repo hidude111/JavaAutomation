@@ -28,17 +28,17 @@ public class TestListener extends UIBaseTest implements ITestListener {
     }
     @Override
     public void onTestStart(ITestResult iTestResult) {
-        Log.info(getTestMethodName(iTestResult) + " test is starting.");
+        Log.info(getTestMethodName(iTestResult) + " Starting Test");
     }
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
-        Log.info(getTestMethodName(iTestResult) + " test is succeed.");
+        Log.info(getTestMethodName(iTestResult) + " Test Passed!");
         //ExtentReports log operation for passed tests.
         getTest().log(Status.PASS, "Test passed");
     }
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        Log.info(getTestMethodName(iTestResult) + " test is failed.");
+        Log.info(getTestMethodName(iTestResult) + " Test Failed");
         //Get driver from BaseTest and assign to local webdriver variable.
         Object testClass = iTestResult.getInstance();
         WebDriver driver = ((UIBaseTest) testClass).getDriver();
@@ -51,7 +51,7 @@ public class TestListener extends UIBaseTest implements ITestListener {
     }
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-        Log.info(getTestMethodName(iTestResult) + " test is skipped.");
+        Log.info(getTestMethodName(iTestResult) + " test Skipped.");
         //ExtentReports log operation for skipped tests.
         getTest().log(Status.SKIP, "Test Skipped");
     }
